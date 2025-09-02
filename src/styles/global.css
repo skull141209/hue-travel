@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-default: "Be Vietnam Pro", sans-serif;
+  --bento-border-radius: 1rem;
+  --bento-border: 1px solid #e5e7eb;
+  --bento-background: white;
+  --bento-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --bento-padding: 1rem;
+  --photo-container-position: relative;
+  --photo-container-height: 60%;
+  --photo-credit-position: absolute;
+  --photo-credit-bottom: 2rem;
+  --photo-credit-right: 2rem;
+  --photo-credit-z-index: 10;
+  --photo-credit-background: rgba(250, 250, 250, 0.8);
+  --photo-credit-padding: 0 0.25rem;
+  --photo-credit-border-radius: 0.25rem;
+}
+
+body {
+  font-family: var(--font-default);
+}
+
+.bento {
+  border-radius: var(--bento-border-radius);
+  border: var(--bento-border);
+  background: var(--bento-background);
+  box-shadow: var(--bento-box-shadow);
+  padding: var(--bento-padding);
+}
+
+.photo-container {
+  position: var(--photo-container-position);
+  height: var(--photo-container-height);
+}
+
+.photo-credit {
+  position: var(--photo-credit-position);
+  bottom: var(--photo-credit-bottom);
+  right: var(--photo-credit-right);
+  z-index: var(--photo-credit-z-index);
+  background: var(--photo-credit-background);
+  padding: var(--photo-credit-padding);
+  border-radius: var(--photo-credit-border-radius);
+}

@@ -1,16 +1,26 @@
 ---
-
+import Default from "./layouts/Default.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Default title="Hue.Travel">
+  <div class="font-['Be_Vietnam_Pro'] w-full h-screen bg-gray-50 p-6 flex flex-col gap-4 items-center">
+    <div class="bento w-full flex-none p-4 m-0.5">
+      <h1 class="mt-4 text-left text-xl sm:text-3xl font-bold mb-4">Hue.Travel</h1>
+    </div>
+    <div class="bento w-full h-1/3 flex flex-col photo-container">
+      <img 
+        src="https://images.unsplash.com/photo-1705823637009-5a044acfe9bf?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+        alt="Hue Citadel"
+        class="w-full h-full object-cover rounded-lg" 
+      />
+      <p class="photo-credit border border-gray-100 text-md text-gray-500">Photo by: <a class="font-medium underline" href="https://unsplash.com/@haunguyen98">Hậu Nguyễn</a>
+      </p>
+    </div>
+    <div class="bento w-full flex-none p-4 pl-10 flex flex-col justify-center space-y-4">
+      <p class="text-xl">It is simply a travel guide website for people who travel to Hue city, Vietnam.</p>
+      <p class="text-xl">A rare ancient city in Vietnam</p>
+      <p class="text-xl">We are cooking something we hope to be an amazing stop for anyone want to travel to Hue and what is beyond</p>
+      <p class="text-lg text-blue-600 underline cursor-pointer">Interesting? Have a private look behind the curtain</p>
+    </div>
+  </div>
+</Default>
