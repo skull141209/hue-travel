@@ -25,6 +25,7 @@ body {
 
 .bento {
   border-radius: var(--bento-border-radius);
+  max-width: 1140px;
   border: var(--bento-border);
   background: var(--bento-background);
   box-shadow: var(--bento-box-shadow);
